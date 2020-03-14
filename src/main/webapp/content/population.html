@@ -1,0 +1,16 @@
+
+    <div class="col-sm-3 sidenav">
+        <div id="mainSelect" data-ng-include="'parts/main-selector.html'"></div>
+        <div id="typeSelect" data-ng-include="'parts/type-selector.html'"></div>
+        <div id="debugInfo" data-ng-include="'parts/debug-info.html'"></div>
+    </div>
+
+    <div class="col-sm-8 text-center">
+        <h3>Population and Internet users</h3>
+        <hr>
+
+        <div id="chartContent" data-ng-include="'parts/chart-content.html'"></div>
+    </div>
+
+    <div class="col-sm-1"></div>
+    <div data-ng-init="updateData()"></div>

@@ -1,0 +1,15 @@
+
+    <div class="col-sm-3 sidenav">
+        <div id="mainSelect" data-ng-include="'parts/main-selector.html'"></div>
+        <button type="button" class="btn btn-default btn-md" data-ng-click="showProp()">{{chooseBut}}</button>
+        <div id="debugInfo" data-ng-include="'parts/debug-info.html'"></div>
+    </div>
+
+    <div class="col-sm-8 text-center">
+        <h3>{{title}}</h3>
+        <h5>{{description}}</h5>
+        <hr>
+        <div id="propSelect" data-ng-show="choose" data-ng-include="'parts/prop-selector.html'"></div>
+        <div id="chartContent" data-ng-include="'parts/chart-content.html'"></div>
+    </div>
+    <div class="col-sm-1"></div>

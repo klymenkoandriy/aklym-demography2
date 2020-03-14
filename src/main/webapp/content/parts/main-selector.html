@@ -1,0 +1,33 @@
+<form>
+    <label>Select countries:
+        <select class="form-control" id="countrySelect1" data-ng-model="countryCode1" 
+                data-ng-change="setCountryCode1(countryCode1); updateData()">
+            <option data-ng-repeat="x in countries" data-ng-value="x.Code">{{x.Name}}</option>
+        </select>
+    </label>
+    <label>
+        <select class="form-control" id="countrySelect2" data-ng-model="countryCode2" 
+                data-ng-change="setCountryCode2(countryCode2); updateData()">
+            <option data-ng-repeat="x in countries" data-ng-value="x.Code">{{x.Name}}</option>
+        </select>
+    </label>
+</form>
+
+<form>
+    <label>From:
+        <select class="form-control" id="fromYearsSelect"
+            data-ng-options="option for option in fromYears.availableOptions"
+            data-ng-model="fromYears.selectedOption"
+            data-ng-change="setFromYear(fromYears.selectedOption); updateData()">
+        </select>
+    </label>
+    <label>To:
+        <select class="form-control" id="toYearsSelect"
+            data-ng-options="option for option in toYears.availableOptions"
+            data-ng-model="toYears.selectedOption"
+            data-ng-change="setToYear(toYears.selectedOption); updateData()">
+        </select>
+    </label>
+</form>
+
+

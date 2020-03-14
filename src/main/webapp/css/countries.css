@@ -1,0 +1,93 @@
+body {
+    background-color: #F1F1F1;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color:#363636;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+.row.content {
+	height: 100%;
+}
+
+.sidenav {
+	margin-top: 100px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+	.sidenav {
+		height: auto;
+		padding: 15px;
+	}
+	.row.content {
+		height: auto;
+	}
+}
+
+.formSelect {
+    margin: 30px;
+}
+
+select {
+    margin: 10px;
+}
+
+button {
+    margin: 20px;
+}
+
+#countrySelect1 {
+    width : 250px	
+}
+
+#countrySelect2 {
+    width : 250px   
+}
+
+#fromYearsSelect {
+	width : 100px
+}
+
+#toYearsSelect {
+    width : 100px
+}
+
+#addIhfo {
+	margin-top: 5%;
+	opacity: 0.2;
+}
+
+#props {
+    margin: 30px;
+}
+
+#hello {
+    padding-top:10%;
+    padding-left:30%;
+}
+
+ .btn-default {
+	width : 150px;
+	height: 30px;
+} 
+
+.loader {
+	margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #454545;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

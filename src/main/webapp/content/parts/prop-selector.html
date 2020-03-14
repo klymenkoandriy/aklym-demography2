@@ -1,0 +1,35 @@
+<!-- <script type="text/javascript" src="../../../js/countries/funShowSelected.js"></script> -->
+
+    <div id="props">
+    
+     <div class="col-sm-2 text-left">
+    </div>    
+    
+    <div class="col-sm-3 text-left">
+        <label class="radio" data-ng-repeat="x in properties" data-ng-if="x.id<19" 
+                data-toggle="tooltip" title={{x.description}}>
+            <input type="radio" data-ng-model="x.use" data-ng-checked="x.use" data-ng-value="true"
+                data-ng-change="chooseProp(x.id-1); updateData()"> {{x.id}} : {{x.name}}
+        </label>
+    </div>
+
+    <div class="col-sm-3 text-left">
+        <label class="radio" data-ng-repeat="x in properties" data-ng-if="(x.id>=19)&&(x.id<38)"
+                data-toggle="tooltip" title={{x.description}}>
+            <input type="radio" data-ng-model="x.use" data-ng-checked="x.use" data-ng-value="true" 
+                data-ng-change="chooseProp(x.id-1); updateData()"> {{x.id}} : {{x.name}}
+        </label>
+    </div>
+
+    <div class="col-sm-3 text-left">
+        <label class="radio" data-ng-repeat="x in properties" data-ng-if="x.id>=38"
+                data-toggle="tooltip" title={{x.description}}>
+            <input type="radio" data-ng-model="x.use" data-ng-checked="x.use" data-ng-value="true"
+                data-ng-change="chooseProp(x.id-1); updateData()"> {{x.id}} : {{x.name}}
+        </label>
+    </div>
+
+    <div class="col-sm-2 text-left">
+    </div> 
+
+    </div>
